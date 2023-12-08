@@ -15,7 +15,7 @@ app.use(express.json());
 // Routes
 // Add your routes here. Example:
 // app.use('/api/users', require('./routers/userRouter'));
-app.use('/', require('../backend/routes'));
+app.use('/', require('./routes/userRouters'));
 
 // Start server
 app.listen(PORT, () => {

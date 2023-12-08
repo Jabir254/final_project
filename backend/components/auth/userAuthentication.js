@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const config = require('../config'); // Create a config file for storing your secret key and other configurations
-const User = require('../components/user/userModel'); // Adjust the path based on your project structure
+const User = require('../user/userModel'); // Adjust the path based on your project structure
 
 const generateToken = (user) => {
   const payload = {

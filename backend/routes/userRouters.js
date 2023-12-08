@@ -4,7 +4,7 @@ const User = require("../components/user/userModel");
 const {
   generateToken,
   authenticateUser,
-} = require("../utils/userAuthentication");
+} = require("../components/auth/userAuthentication");
 
 // @route   POST /api/users
 // @desc    Register a new user
