@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Registration</title>
-</head>
-<body>
-  <h1>User Registration</h1>
-  <form id="registrationForm">
-    <label for="username">Username:</label>
-    <input type="text" id="username" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
+    <title>User Registration</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required />
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
 
-    <button type="button" onclick="registerUser()">Register</button>
-  </form>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
 
-  <script src="script.js"></script>
-</body>
+      <button type="button" onclick="registerUser()">Register</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
