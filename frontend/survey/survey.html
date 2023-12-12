@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey App</title>
+</head>
+<body>
+  <h1>Create a Survey</h1>
+  <form id="surveyForm">
+    <label for="title">Survey Title:</label>
+    <input type="text" id="title" required>
+
+    <label for="question1">Question 1:</label>
+    <input type="text" id="question1" required>
+    <label for="options1">Options (comma-separated):</label>
+    <input type="text" id="options1" required>
+
+    <!-- You can add more questions if needed -->
+
+    <button type="button" onclick="createSurvey()">Create Survey</button>
+  </form
