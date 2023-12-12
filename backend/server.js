@@ -18,6 +18,10 @@ app.use(express.json());
 app.use('/', require('./routes/userRouters'));
 app.use('/survey', require('./routes/surveyRoutes'));
 
+
+//static files
+app.use(express.static('frontend'))
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('User logged in successfully. Token:', token);
 
       // Redirect the user to the survey page
-      window.location.href = '/survey.html'; // Change this to the actual URL of your survey page
+      window.location.href = 'frontend/survey/survey.html'; // Change this to the actual URL of your survey page
     } catch (error) {
       console.error('Error logging in:', error.response.data.msg);
       // Handle error (e.g., display an error message to the user)
