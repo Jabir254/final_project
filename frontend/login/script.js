@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("password").value;
 
     try {
-      const response = await axios.post("/", {
+      const response = await axios.post("/register", {
         // Assuming same-origin, use relative URLs
         username,
         email,

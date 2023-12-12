@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Make a POST request to create a new survey
       const response = await axios.post(
-        "/api/surveys",
+        "create",
         {
           title,
           questions: [
@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
   window.getSurveys = async () => {
     try {
       // Make a GET request to retrieve all surveys
-      const response = await axios.get("/api/surveys");
+      const response = await axios.get("/surveylist");
 
       // Display the surveys in a list
-      const surveyList = document.getElementById("surveyList");
+      const surveyList = document.getElementById("surveyLists");
       surveyList.innerHTML = "";
 
       response.data.forEach((survey) => {
