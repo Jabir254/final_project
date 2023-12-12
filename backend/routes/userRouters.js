@@ -9,7 +9,7 @@ const {
 // @route   POST /api/users
 // @desc    Register a new user
 // @access  Public
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
   const { username, email, password } = req.body;
 
   try {
