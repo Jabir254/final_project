@@ -28,7 +28,7 @@ router.post("/create", async (req, res) => {
 // @route   GET /api/surveys
 // @desc    Get all surveys
 // @access  Public
-router.get("/", async (req, res) => {
+router.get("/surveylist", async (req, res) => {
   try {
     const surveys = await Survey.find().populate("creator", "username"); // Populate creator field with username
     res.json(surveys);
@@ -41,7 +41,7 @@ router.get("/", async (req, res) => {
 // @route   GET /api/surveys/:id
 // @desc    Get a specific survey by ID
 // @access  Public
-router.get("/:id", async (req, res) => {
+router.get("surveylist/:id", async (req, res) => {
   const surveyId = req.params.id;
 
   try {
